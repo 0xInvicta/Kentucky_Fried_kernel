@@ -24,7 +24,7 @@ start:
 	hlt
 
 check_multiboot:
-	cmp eax, 0x36d76286 ;Checks for magic value
+	cmp eax, 0x36d76289 ;Checks for magic value
 	jne .no_multiboot ;call .no_multiboot to print error message
 	ret ;RETURN
 .no_multiboot:
